@@ -1,8 +1,6 @@
 const navbar = document.getElementById('navbar');
 const topOfNav = navbar.offsetTop;
 
-console.log(topOfNav);
-
 function fixedNavbar() {
     if(window.scrollY >= topOfNav) {
         document.body.style.paddingTop = navbar.offsetHeight + 'px';
@@ -14,3 +12,4 @@ function fixedNavbar() {
 
 }
 window.addEventListener('scroll', fixedNavbar);
+
