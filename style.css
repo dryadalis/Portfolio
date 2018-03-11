@@ -22,6 +22,39 @@
 #showcase .name {
     color: #DD1155;
 }
+#showcase .name:hover span {
+    position: relative;
+    display: inline-block;
+    color:#DD1155;
+    animation: bounce 1.6s linear infinite;
+}
+
+#showcase .name span:nth-child(1){
+    animation-delay: 0s;
+}
+#showcase .name span:nth-child(2){
+    animation-delay: 0.2s;
+}
+#showcase .name span:nth-child(3){
+    animation-delay: 0.4s;
+}
+#showcase .name span:nth-child(4){
+    animation-delay: 0.6s;
+}
+#showcase .name span:nth-child(5){
+    animation-delay: 0.8s;
+}
+#showcase .name span:nth-child(6){
+    animation-delay: 1.0s;
+}
+#showcase .name span:nth-child(7){
+    animation-delay: 1.2s;
+}
+#showcase .name span:nth-child(8){
+    animation-delay: 1.4s;
+}
+
+
 #showcase h1 {
     color: white;
     font-size: 50px;
@@ -79,11 +112,76 @@ nav li {
 
 nav a {
     text-decoration: none;
-    padding: 20px;
+    border-bottom: 3px solid #fff;
+    padding: 2px;
+    margin-top: 15px;
+    text-align: center;
     display: inline-block;
     color: white;
-    transition: all 0.2s;
 }
+nav a:hover {
+    border-bottom: 3px solid #DD1155;
+}
+nav a:hover span {
+    position: relative;
+    display: inline-block;
+    color:#DD1155;
+    animation: bounce 1.6s linear infinite;
+}
+
+nav a span:nth-child(1){
+    animation-delay: 0s;
+}
+nav a span:nth-child(2){
+    animation-delay: 0.2s;
+}
+nav a span:nth-child(3){
+    animation-delay: 0.4s;
+}
+nav a span:nth-child(4){
+    animation-delay: 0.6s;
+}
+nav a span:nth-child(5){
+    animation-delay: 0.8s;
+}
+nav a span:nth-child(6){
+    animation-delay: 1.0s;
+}
+nav a span:nth-child(7){
+    animation-delay: 1.2s;
+}
+nav a span:nth-child(8){
+    animation-delay: 1.4s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    10% {
+        transform: translateY(-30px);
+    }
+    15% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+    30% {
+        transform: translateY(0px);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    45% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
 
 li.logo {
     max-width: 0;
@@ -105,6 +203,7 @@ li.logo {
 li.logo a {
     color: grey;
     font-size: 18px;
+    border: none !important;
 }
 
 
