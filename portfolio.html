@@ -14,6 +14,7 @@
     <div id="showcase">
 
         <h1>Hi, I'm <span class="name">
+            <a href="#aboutMe">
             <span>K</span>
             <span>a</span>
             <span>r</span>
@@ -22,86 +23,90 @@
             <span>i</span>
             <span>n</span>
             <span>a</span>
+            </a>
             Romańska.</span></h1>
-        <p>I'm full-stack web developer.</p>
-        <a href="#section-about" class="button">View my work <i class="fas fa-angle-double-down"></i></a>
+        <p>Junior Front-End Developer.</p>
+        <a href="#aboutMe" class="button">View my work <i class="fas fa-angle-double-down"></i></a>
 
     </div>
     <!-- Navigator -->
-    <nav id="navbar">
-        <ul>
-            <li class="logo">
-                <a href="#showcase" title="Back to top"><i class="fas fa-angle-double-up "></i></a>
-            </li>
-            <li>
-                <a href="#showcase">
-                    <span>H</span>
-                    <span>o</span>
-                    <span>m</span>
-                    <span>e</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span>A</span>
-                    <span>b</span>
-                    <span>o</span>
-                    <span>u</span>
-                    <span>t</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span>P</span>
-                    <span>r</span>
-                    <span>o</span>
-                    <span>j</span>
-                    <span>e</span>
-                    <span>c</span>
-                    <span>t</span>
-                    <span>s</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span>C</span>
-                    <span>o</span>
-                    <span>n</span>
-                    <span>t</span>
-                    <span>a</span>
-                    <span>c</span>
-                    <span>t</span>
-                </a>
-            </li>
+    <nav id="navbar" class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSideMenu()">
+                <svg width="30" heigth="30">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+        <ul class="navbar-nav">
+            <li><i class="fas fa-envelope"></i><a href="#">Contact</a></li>
+            <li><i class="fas fa-eye"></i><a href="#">Projects</a></li>
+            <li><i class="fas fa-female"></i><a href="#">About</a></li>
+            <li><i class="fas fa-home"></i><a href="#">Home</a></li>
         </ul>
+
     </nav>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+    <button id="backToTop" onclick="backToTop()" title="Back to top">
+        <i class="fas fa-angle-double-up "></i></button>
     <!-- ABOUT ME -->
-    <section class="section section-light">
-        <h2>Section One</h2>
+    <div id="main">
+    <section id="aboutMe" class="section section-light">
+        <h2>About Karolina</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus illo libero neque unde! Doloribus ipsa mollitia obcaecati qui ratione sed velit, voluptas voluptatem! Consequuntur cum esse nemo odio perspiciatis quia quo recusandae sapiente? Amet atque autem, commodi deserunt dignissimos dolor doloribus eligendi exercitationem fugit harum ipsum iusto labore laboriosam magnam natus, non odit porro quaerat quam quasi repellat reprehenderit repudiandae similique veritatis voluptatem? A amet asperiores consectetur cum dolorum error explicabo fugiat in inventore labore minima molestiae nemo neque nesciunt nihil, officia optio possimus quisquam quo quod ratione repellendus saepe tempora vero vitae. At dignissimos, eum ipsam nemo nobis sapiente!
+            I am optimistic young woman, full of energy, commitment and ideas. As far as I can remember, I have always wanted to work with people and make difference in their lives. It was the reason why I chose medical studies. After two years of long and exhausting days in hospitals I realized that for many reasons it is not my cup of tea. So I decided to listen to the my heart, finish the last year of studies and start somewhere else. Programming came to my aid to combine working with people with exploring and developing the world.
         </p>
     </section>
     <div class="pimg1">
         <div class="ptext">
             <span class="border">
-                About Karolina
+                "Passion led us here!"
             </span>
         </div>
     </div>
-
-    <section class="section section-light">
-        <h2>Section Two</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus illo libero neque unde! Doloribus ipsa mollitia obcaecati qui ratione sed velit, voluptas voluptatem! Consequuntur cum esse nemo odio perspiciatis quia quo recusandae sapiente? Amet atque autem, commodi deserunt dignissimos dolor doloribus eligendi exercitationem fugit harum ipsum iusto labore laboriosam magnam natus, non odit porro quaerat quam quasi repellat reprehenderit repudiandae similique veritatis voluptatem? A amet asperiores consectetur cum dolorum error explicabo fugiat in inventore labore minima molestiae nemo neque nesciunt nihil, officia optio possimus quisquam quo quod ratione repellendus saepe tempora vero vitae. At dignissimos, eum ipsam nemo nobis sapiente!
-        </p>
-    </section>
-    <div class="pimg2">
-        <div class="ptext">
-            <span class="border">
-                Skills:
-            </span>
+        <!--PROJECTS-->
+    <div class="portfolio">
+        <div>
+            <a href="#">
+                <img src="img/pexels-photo-47454.jpeg"/>
+            </a>
         </div>
+        <div>
+            <a href="#">
+                <img src="img/mountains.jpeg"/>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="img/men.jpeg/"/>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="img/flamingo-phoenicopterus-flamingos-phoenicopteriformes.jpg"/>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="img/pexels-photo-209977%20(1).jpeg"/>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="img/pexels-photo-669615.jpeg"/>
+            </a>
+        </div>
+
+
     </div>
 
     <!--CONTACT -->
@@ -114,8 +119,7 @@
                 <input type="email" id="mail" name="user_mail" placeholder="  Email" >
             </div>
             <div>
-                <input type="text" id="subject" name="subject" placeholder="  Subject">
-            </div>
+                <input type="text" id="subject" name="subject" placeholder="  Subject"> </div>
             <div>
                 <textarea id="msg" name="user_message" placeholder=" Your message..."></textarea>
             </div>
@@ -133,14 +137,15 @@
     <footer>
         <div class="icons">
 
-        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="#"><i class="fas fa-envelope-square fa-2x"></i></a>
-            <a href="https://github.com/dryadalis" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-facebook-square fa-2x" style="color:#3B5998"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x" style="color:#0077B5"></i></a>
+        <a href="#"><i class="fas fa-envelope-square fa-2x" style="color:#c71610" ></i></a>
+            <a href="https://github.com/dryadalis" target="_blank"><i class="fab fa-github-square fa-2x" style="color:black"></i></a>
         </div>
         <p>Made with <i class="far fa-heart"></i> by Romanska.</p>
         <p class="copyright">&copy; 2018 All Rights Reserved </p>
     </footer>
+    </div>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
     <script src="contact.js"></script>
 <script src="script.js"></script>
