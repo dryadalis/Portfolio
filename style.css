@@ -206,39 +206,30 @@ nav {
     transition: margin-right 0.5s;
 }
 /*ABOUT*/
-.pimg1, .pimg2 {
+.pimg1 {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0.70;
-    background-position: center;
+    background: url('./img/pexels-photo.jpg') center no-repeat fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-
-    background-attachment: fixed;
-}
-.pimg1 {
-    background-image: url('./img/pexels-photo.jpg');
     min-height: 400px;
-
 }
 
-.pimg2 {
-    background-image: url('./img/pexels-photo-923277.jpeg');
-    min-height: 400px;
-
-}
 .section {
     text-align: center;
-    padding: 80px 120px;
-}
-
-.section-light {
-    background-color: #ddd;
+    background-color: white;
     color: #282e34;
+    margin-bottom: 100px;
 }
-
+.section h2 {
+    margin: 55px;
+    font-size: 50px;
+    font-family: Raleway;
+    color: #DD1155;
+    border-bottom: 3px solid #DD1155;
+}
 
 .ptext {
     position: absolute;
@@ -251,6 +242,14 @@ nav {
 
 }
 /*PORTFOLIO*/
+.sectionPort h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 35px;
+    border-bottom: 3px solid #DD1155;
+    font-family: Raleway;
+    color: #DD1155;
+}
 .portfolio {
     display: flex;
     margin: 0.5vw;
@@ -278,12 +277,15 @@ nav {
     }
 }
 
+
 /*CONTACT*/
 .contactme h2 {
     font-family: Raleway;
     font-size: 50px;
-    margin: 15px;
-    color: palevioletred;
+    margin: 35px;
+    color: #DD1155;
+    border-bottom: 3px solid #DD1155;
+    text-align: center;
 }
 
 .contactme input {
