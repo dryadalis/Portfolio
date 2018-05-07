@@ -205,8 +205,10 @@ nav {
 #main {
     transition: margin-right 0.5s;
 }
-/*ABOUT*/
-.pimg1 {
+
+
+/*PICTURE*/
+#picture .pimg1 {
     position: relative;
     display: flex;
     justify-content: center;
