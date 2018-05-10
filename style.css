@@ -293,16 +293,6 @@ nav {
     cursor: pointer;
 }
 
-@media screen and (max-width: 400px) {
-    .portfolio div {
-        margin: 0;
-    }
-    .portfolio {
-        padding: 0;
-    }
-}
-
-
 /*CONTACT*/
 .contactme h2 {
     font-family: Raleway;
@@ -426,8 +416,20 @@ footer p i {
     font-size: 15px;
 }
 
+@media screen and (max-width: 400px) {
+    .portfolio div {
+        margin: 0;
+    }
+    .portfolio {
+        padding: 0;
+    }
+}
+
+
 @media (max-width: 568px) {
-    .navbar-nav {display: none}
+    .navbar-nav {
+        display: none;
+    }
 }
 @media (min-width:568px ) {
     .open-slide {display: none}
