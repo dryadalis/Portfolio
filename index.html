@@ -42,20 +42,20 @@
             </a>
         </span>
         <ul class="navbar-nav">
-            <li><i class="fas fa-envelope"></i><a href="#">Contact</a></li>
-            <li><i class="fas fa-eye"></i><a href="#">Projects</a></li>
-            <li><i class="fas fa-female"></i><a href="#">About</a></li>
-            <li><i class="fas fa-home"></i><a href="#">Home</a></li>
+            <li><i class="fas fa-envelope"></i><a href="#contact">Contact</a></li>
+            <li><i class="fas fa-eye"></i><a href="#projects">Projects</a></li>
+            <li><i class="fas fa-female"></i><a href="#main">About</a></li>
+            <li><i class="fas fa-home"></i><a href="#showcase">Home</a></li>
         </ul>
 
     </nav>
     <div id="side-menu" class="side-nav">
         <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
 
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#showcase">Home</a>
+        <a href="#main">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </div>
     <button id="backToTop" onclick="backToTop()" title="Back to top">
         <i class="fas fa-angle-double-up "></i></button>
@@ -84,7 +84,7 @@
         <!-- SKILLS-->
 
         <!--PROJECTS-->
-        <div class="sectionPort">
+        <div class="sectionPort" id="projects">
             <h1>My work: </h1>
         </div>
         <div class="portfolio">
@@ -120,7 +120,7 @@
         </div>
 
     <!--CONTACT -->
-    <div class="contactme">
+    <div class="contactme" id="contact">
         <h2>Get in touch? <i class="fas fa-comments "></i></h2>
         <div class="alert">Your message has been sent.</div>
         <form id="contactForm">

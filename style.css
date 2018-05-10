@@ -425,10 +425,14 @@ footer p i {
     }
 }
 
-
 @media (max-width: 568px) {
     .navbar-nav {
         display: none;
+    }
+
+    #showcase p {
+        color: #DD1155;
+        font-weight: bold;
     }
 }
 @media (min-width:568px ) {
